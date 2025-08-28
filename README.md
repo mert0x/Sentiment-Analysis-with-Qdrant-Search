@@ -45,18 +45,19 @@ Poetry: For managing dependencies. If you don't have it, install it with pip ins
 2. Run Qdrant
 Start the Qdrant vector database using Docker with the following command in your terminal:
 
-docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
+```docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant```
 
 3. Clone & Install Dependencies
 
 Clone this repository and install the required Python packages using Poetry.
 
-git clone https://github.com/mert0x/Sentiment-Analysis-with-Qdrant-Search
+```git clone https://github.com/mert0x/Sentiment-Analysis-with-Qdrant-Search```
 
-cd Sentiment-Analysis-with-Qdrant-Search
+```cd Sentiment-Analysis-with-Qdrant-Search```
 
-# Install dependencies from pyproject.toml
-poetry install
+Install dependencies from pyproject.toml
+
+``` poetry install ```
 
 # Usage
 The project's architecture is designed to be generic and adaptable to various datasets. The core logic for connecting to Qdrant, processing data, and performing queries is encapsulated in reusable classes (ClientClass.py, DataParquet.py).
@@ -68,11 +69,11 @@ To run the end-to-end pipeline for a specific dataset, execute its main script:
 
 For the IMDB dataset:
 
-poetry run python main_imdb.py
+```poetry run python main_imdb.py```
 
 For the Amazon dataset:
 
-poetry run python main_amazon.py
+```poetry run python main_amazon.py```
 
 The scripts will print the results of the search and recommendation queries to the console. To experiment with your own queries, you can modify the pre-defined objects in SearchParams.py and RecommendParams.py or create new ones.
 
