@@ -53,7 +53,6 @@ docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
 3. Clone & Install Dependencies
 Clone this repository and install the required Python packages using Poetry.
 
-# Clone the repository
 git clone <your-repo-url>
 cd <your-repo-name>
 
